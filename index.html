@@ -13,8 +13,17 @@
   <div id="formContent">
     <form>
       <input type="text" id="login" class="fadeIn second" name="login" placeholder="Khi nào có pass quay lại nhé!">
-      <input type="submit" class="fadeIn fourth" value="Bấm vô đây khi có pass nhé">
+      <input  type="button" id="button" class="fadeIn fourth" value="Bấm vô đây khi có pass nhé" onclick="myFunction()">
     </form>
   </div>
 </div>
+<script>
+function myFunction() {
+  let va = document.getElementById("login").value;
+  if(va === "TuyenYeuThao")
+  alert("Hay taaaa, pass đúng ròi, mà Tuyên chưa làm xong!!!");
+  else
+  alert("Sai rồi nhen, đợi khi nào đến lúc Thảo sẽ biết ^^");
+}
+  </script>
 </body>
